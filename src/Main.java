@@ -11,15 +11,21 @@ public class Main {
 
         // Метод по нахождению максимального числа
         float max = findMaxVal(num1, num2, num3);
-
+        float mid = findMid(num1,num2,num3);
         System.out.println("Числа: " + num1 + " " + num2 + " " + num3);
 
         // Вывод результата на экран
         System.out.println("Минимальное число из трех: " + min);
-        //System.out.println("Максимальное число из трех: " + max);
+        System.out.println("Максимальное число из трех: " + max);
+        System.out.println("\nГослинг крутой программист!");
+
+        System.out.println("\nСреднее число из трех: " + mid);
     }
 
+    public static float findMid(float a, float b, float c) {
+        return (a+b+c)/3;
 
+    }
     public static float findMinVal(float a, float b, float c) {
         float min = a;
 
